@@ -1,0 +1,72 @@
+<%include ./headerandfooter/Header.ejs %>
+
+  <style>
+
+    body
+    {
+      font-family:'Maiandra GD';
+    }
+    main {
+      float: left;
+      width: 82%;
+      margin: 5px;
+      padding: 3px;
+    }
+
+
+    main ul li {
+      list-style-type: square;
+    }
+
+    form {
+      margin: 10px;
+      padding: 10px;
+    }
+
+    #feedbackForm ul li {
+      list-style:none;
+    }
+
+    form ul li {
+      padding-bottom: 1em;
+    }
+
+  </style>
+  <script src="javaScript/JavaScript.js" type="text/javascript"></script>
+
+<main>
+  <form id="feedbackForm">
+    <ul>
+      <li>
+        <label for="FirstName">First Name:</label>
+        <input name="FirstName" id="FirstName" placeholder="Your First Name" />
+      </li>
+      <li>
+        <label for="LastName">Last Name:</label>
+        <input name="LastName" id="LastName" placeholder="Your Last Name" />
+      </li>
+      <li>
+        <label for="EmailId">Email Id:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input name="EmailId" id="EmailId" placeholder="Your Email Id" />
+      </li>
+      <li>
+        <label for="MobileNumber">Mobile No:</label>
+        <input name="MobileNumber" id="MobileNumber" placeholder="Your Mobile Number" />
+      </li>
+      <li>
+        <label for="group">What you liked:</label>
+        <input type="checkbox" name="group" value="Website Desgin">Website Design
+        <input type="checkbox" name="group" value="Website Contents">Website Contents
+        <input type="checkbox" name="group" value="User Interface">User Interface
+      </li>
+      <li>
+      <label for="Suggestion">Suggestions:</label>
+      </li>
+      <li><textarea id="comments" style="width: 100%; height:150px;padding-right:0px;margin-right:0px"></textarea></li>
+      <li><input type="button" value="Submit" onclick="formDisplay();" /></li>
+    </ul>
+  </form>
+
+
+<%include ./headerandfooter/Footer.ejs %>
+</main>
